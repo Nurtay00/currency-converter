@@ -13,7 +13,7 @@ class DataService {
                 "Access-Control-Allow-Headers": "Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With"
             }
         };
-        const url = `/v6/73093ee2dec12c607a3c4640/latest/${format}`;
+        const url = `https://v6.exchangerate-api.com/v6/73093ee2dec12c607a3c4640/latest/${format}`;
 
         return axiosApiInstance.get(url,headers).then((response) => response.data);
     }
